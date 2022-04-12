@@ -7,10 +7,10 @@ for (const char of sentence) {
   time += 50;
 }
 
-function delayPrint(char, time) {
+const delayPrint = function(char, time) {
   setTimeout(() => {
     process.stdout.write(char);
-  }, time)
+  }, time);
 };
 
 setTimeout(() => console.log("\n"), newLineDelay);
